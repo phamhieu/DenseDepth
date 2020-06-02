@@ -1,3 +1,14 @@
+# Scrapy
+## Setup environment
+- `python3 -m venv env`
+- `source env/bin/activate`
+- `pip install -r requirements.txt`
+
+## Generate Map
+- `python3 test.py --input ./examples/resize.jpg`
+
+======
+
 ## [High Quality Monocular Depth Estimation via Transfer Learning (arXiv 2018)](https://arxiv.org/abs/1812.11941)
 **[Ibraheem Alhashim](https://ialhashim.github.io/)** and **Peter Wonka**
 

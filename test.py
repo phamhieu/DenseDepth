@@ -7,7 +7,7 @@ import matplotlib
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '5'
 from keras.models import load_model
 from layers import BilinearUpSampling2D
-from utils import predict, load_images, display_images
+from utils import predict, load_images, display_images, save_images
 from matplotlib import pyplot as plt
 
 # Argument Parser
@@ -37,8 +37,11 @@ outputs = predict(model, inputs)
 #matplotlib.use('TkAgg')   
 
 # Display results
-viz = display_images(outputs.copy(), inputs.copy())
-plt.figure(figsize=(10,5))
-plt.imshow(viz)
-plt.savefig('test.png')
-plt.show()
+# viz = display_images(outputs.copy(), inputs.copy())
+# plt.figure(figsize=(10,5))
+# plt.imshow(viz)
+# plt.savefig('test.png')
+# plt.show()
+
+# Save map
+save_images("map.png", outputs, None, None, True, True)
